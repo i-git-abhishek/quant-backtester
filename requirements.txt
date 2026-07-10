@@ -3,4 +3,3 @@ pandas
 backtesting
 streamlit
 matplotlib
-pyarrow==17.0.0
