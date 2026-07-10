@@ -29,8 +29,8 @@ class SmaCrossStrategy(Strategy):
         # Fast crosses above slow -> go long
         if crossover(self.sma_fast, self.sma_slow):
             self.position.close()
-            self.buy()
+            self.buy(size=.95)
         # Fast crosses below slow -> exit / go short
         elif crossover(self.sma_slow, self.sma_fast):
             self.position.close()
-            self.sell()
+            self.sell(size=.95)
